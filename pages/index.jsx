@@ -25,6 +25,7 @@ const Index = () => {
       <Button type="primary">普通路由 query参数</Button>
     </Link>
     <br/>
+    ------------------------------------------------------------------------
     <br/>
     <Link href={{
       pathname: '/b/[bbb]',

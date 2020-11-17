@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router'
-
-const A = ({a, b, state}) =>{
+import styles from './a.module.scss';
+const A = ({a, b}) =>{
   const router = useRouter();
   const {aaa} = router.query;
-  return <h2>
+  return <h2 className={styles.red}>
     A Page {aaa} {a} {b}
   </h2>
 }

@@ -1,3 +1,4 @@
+import App from 'next/app';
 import 'antd/dist/antd.css'
 import './styles.css';
 export default function MyApp({ Component, pageProps }) {
@@ -6,12 +7,8 @@ export default function MyApp({ Component, pageProps }) {
   </>
 }
 
-MyApp.getInitialProps = async ({Component}) => {
-  let pageProps = {}
-  if(Component.getInitialProps) {
-    pageProps = await Component.getInitialProps();
-  }
-  return {
-    pageProps
-  };
+MyApp.getInitialProps = async (appContext) => {
+  const appProps = await App.getInitialProps(appContext);
+
+  return { ...appProps }
 }
