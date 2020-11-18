@@ -14,8 +14,8 @@ app.prepare().then(() => {
     ctx.respond = false;
   })
 
-  server.listen(3006, () =>{
-    console.log('koa server is running on port 3006')
+  server.listen(3009, () =>{
+    console.log('koa server is running on port 3009')
   })
 })
 

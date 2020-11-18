@@ -16,6 +16,8 @@ const Index = () => {
       query: {bbb: '97653'}
     });
   }
+
+
   return <div>
     <h1>首页</h1>
     <Button type="primary">Primary Button</Button>
@@ -39,6 +41,8 @@ const Index = () => {
     <br/>
     <br/>
     <Button onClick={clickToB}>router to B</Button>
+    <br/>
+    <br/>
   </div>
 }
 export default Index;
